@@ -1,0 +1,39 @@
+# 34 - Leia a nota e o número de faltas de um aluno, e escreva seu conceito. De acordo com a tabela abaixo,
+# quando o aluno tem mais de 20 faltas ocorre uma redução no conceito.
+
+# Nota          Conceito (Até 20 Faltas)        Conceito (Mais de 20 Faltas)
+# 9.0 até 10    A                               B
+# 7.5 até 8.9   B                               C
+# 5.0 até 7.4   C                               D
+# 4.0 até 4.9   D                               E
+# 0.0 até 3.9   E                               E
+
+nota = float(input("Informe a Nota: "))
+falta = int(input("Informe o número de faltas: "))
+
+if falta <= 20:
+    if nota >= 9.0:
+        print("Aluno conceito A")
+    elif 7.5 <= nota < 9.0:
+        print("Aluno conceito B")
+    elif 5.0 <= nota < 7.5:
+        print("Aluno conceito C")
+    elif 4.0 <= nota < 5.0:
+        print("Aluno conceito D")
+    elif 0.0 <= nota < 4.0:
+        print("Aluno conceito E")
+    else:
+        print("Nota inválida")
+else:
+    if nota >= 9.0:
+        print("Aluno conceito B")
+    elif 7.5 <= nota < 9.0:
+        print("Aluno conceito C")
+    elif 5.0 <= nota < 7.5:
+        print("Aluno conceito D")
+    elif 4.0 <= nota < 5.0:
+        print("Aluno conceito E")
+    elif 0.0 <= nota < 4.0:
+        print("Aluno conceito E")
+    else:
+        print("Nota inválida")
